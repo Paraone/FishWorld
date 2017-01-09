@@ -60,7 +60,8 @@ Michael Rivera
 Marcos Wade
 
 This is an example of an api call using Golang
-```package main
+```
+package main
 
 import (
 	"fmt"
