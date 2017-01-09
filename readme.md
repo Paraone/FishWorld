@@ -72,7 +72,7 @@ import (
 func main() {
 
 //api url
-url := "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyALh7QY1SUX0ir-PrzmEL4iOXgyk2r-vGU"
+url := "https://www.googleapis.com/youtube/v3/search?part=snippet&key=APIKEY_HERE"
 
 //sending get request
 req, _ := http.NewRequest("GET", url, nil)
