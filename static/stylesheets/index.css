@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  cursor: none;
+}
+h1{
+  color: white;
+  font-family: 'Helvetica';
+  position: absolute;
+  z-index: 3;
+  margin-left: 20px;
+}
+img{
+  position: absolute;
+  background-size: contain;
+  width: 100%;
+}
+.slot1{
+  transform: rotate(-60deg);
+  width: 10%;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  animation: up 3s linear;
+}
+.slot2{
+  transform: rotate(30deg);
+  width: 10%;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  animation: up 3s linear;
+}
+.slot3{
+  width: 10%;
+  position: absolute;
+  bottom: -20%;
+  left: 90%;
+  animation: up 3s linear;
+}
+.fish1{
+  transform: rotate(-60deg);
+  width: 10%;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  animation: up 3s linear;
+}
+.fish2{
+  transform: rotate(30deg);
+  width: 10%;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  animation: up 3s linear;
+}
+.fish3{
+  width: 10%;
+  position: absolute;
+  bottom: -20%;
+  left: 90%;
+  animation: up 3s linear;
+}
+.str{
+  margin-top: 17%;
+  margin-left: 47%;
+  border: 10px solid white;
+  padding: 5px;
+}
+@keyframes up{
+  0%{
+    bottom: 0%;
+  }
+  50%{
+    bottom: 50%;
+  }
+  100%{
+    bottom: 100%;
+  }
+}
+.water{
+  height: 100%;
+}
+.hair{
+  position: absolute;
+  width: 8%;
+  transform: translate(-50%, -50%);
+}
