@@ -58,3 +58,33 @@ Dominique Alexander
 Miriam Hernandez
 Michael Rivera
 Marcos Wade
+
+This is an example of an api call using Golang
+```package main
+
+import (
+	"fmt"
+	"net/http"
+	"io/ioutil"
+)
+
+func main() {
+
+//api url
+url := "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyALh7QY1SUX0ir-PrzmEL4iOXgyk2r-vGU"
+
+//sending get request
+req, _ := http.NewRequest("GET", url, nil)
+
+//getting the response
+res, _ := http.DefaultClient.Do(req)
+
+//closing the response body
+defer res.Body.Close()
+body, _ := ioutil.ReadAll(res.Body) //reading the response
+
+fmt.Println(res)
+fmt.Println(string(body))
+
+}
+```
